@@ -3,4 +3,4 @@
             [kami_app]))
 (deftest namespace-loads
   (testing "the restored CLJC namespace loads"
-    (is (some? (the-ns 'kami_app)))))
+    (is (some? (find-ns 'kami_app)))))
